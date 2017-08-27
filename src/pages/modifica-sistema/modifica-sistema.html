@@ -1,0 +1,172 @@
+<!--
+  Generated template for the ModificaSistemaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Modifica Sistema</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="sfondo-modifica" padding>
+  <!--<form #sistemaForm="ngForm" (ngSubmit)="modifySystem()">-->
+  <form #sistemaForm="ngForm">
+    <ion-list >
+      <ion-item class="elemento-sistema">
+        <ion-label>Nome sistema</ion-label>
+        <ion-input  type="text" name="name" [(ngModel)]="this.sistemaDaModificare.nome"
+                   placeholder="Inserire nome sistema"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label>Numero GSM</ion-label>
+        <ion-input type="text" name="numero" [(ngModel)]="this.sistemaDaModificare.numeroGSM"
+                   placeholder="Inserire GSM sistema"></ion-input>
+      </ion-item>
+
+      <ion-item class="inizio-comando">
+        Comando N.1
+      </ion-item>
+      <ion-item class="elemento-sistema">
+        <ion-label fixed>Nome N.1</ion-label>
+        <ion-input type="text" name="nomeComando1" [(ngModel)]="this.sistemaDaModificare.nomeComando1"
+                   placeholder="Inserire nome comando"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label fixed>Testo N.1</ion-label>
+        <ion-input type="text" name="testoComando1" [(ngModel)]="this.sistemaDaModificare.testoComando1"
+                   placeholder="Inserire testo comando"></ion-input>
+      </ion-item>
+      <ion-item class="inizio-comando">
+        Comando N.2
+      </ion-item>
+      <ion-item class="elemento-sistema">
+        <ion-label fixed>Nome N.2</ion-label>
+        <ion-input type="text" name="nomeComando2" [(ngModel)]="this.sistemaDaModificare.nomeComando2"
+                   placeholder="Inserire nome comando"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label fixed>Testo N.2</ion-label>
+        <ion-input type="text" name="testoComando2" [(ngModel)]="this.sistemaDaModificare.testoComando2"
+                   placeholder="Inserire testo comando"></ion-input>
+      </ion-item>
+      <ion-item class="inizio-comando">
+        Comando N.3
+      </ion-item>
+      <ion-item class="elemento-sistema">
+        <ion-label fixed>Nome N.3</ion-label>
+        <ion-input type="text" name="nomeComando3" [(ngModel)]="this.sistemaDaModificare.nomeComando3"
+                   placeholder="Inserire nome comando"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label fixed>Testo N.3</ion-label>
+        <ion-input type="text" name="testoComando3" [(ngModel)]="this.sistemaDaModificare.testoComando3"
+                   placeholder="Inserire testo comando"></ion-input>
+      </ion-item>
+      <ion-item class="inizio-comando">
+        Comando N.4
+      </ion-item>
+      <ion-item class="elemento-sistema">
+        <ion-label fixed>Nome N.4</ion-label>
+        <ion-input type="text" name="nomeComando4" [(ngModel)]="this.sistemaDaModificare.nomeComando4"
+                   placeholder="Inserire nome comando"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label fixed>Testo N.4</ion-label>
+        <ion-input type="text" name="testoComando4" [(ngModel)]="this.sistemaDaModificare.testoComando4"
+                   placeholder="Inserire testo comando"></ion-input>
+      </ion-item>
+      <ion-item class="inizio-comando">
+        Comando N.5
+      </ion-item>
+      <ion-item class="elemento-sistema">
+        <ion-label >Nome N.5</ion-label>
+        <ion-input type="text" name="nomeComando5" [(ngModel)]="this.sistemaDaModificare.nomeComando5"
+                   placeholder="Inserire nome comando"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label>Testo N.5</ion-label>
+        <ion-input type="text" name="testoComando5" [(ngModel)]="this.sistemaDaModificare.testoComando5"
+                   placeholder="Inserire testo comando"></ion-input>
+      </ion-item>
+      <ion-item class="inizio-comando">
+        Comando N.6
+      </ion-item>
+      <ion-item class="elemento-sistema">
+        <ion-label>Nome N.6</ion-label>
+        <ion-input type="text" name="nomeComando6" [(ngModel)]="this.sistemaDaModificare.nomeComando6"
+                   placeholder="Inserire nome comando"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label>Testo N.6</ion-label>
+        <ion-input type="text" name="testoComando6" [(ngModel)]="this.sistemaDaModificare.testoComando6"
+                   placeholder="Inserire testo comando"></ion-input>
+      </ion-item>
+      <ion-item class="inizio-comando">
+        Comando N.7
+      </ion-item>
+      <ion-item class="elemento-sistema">
+        <ion-label >Nome N.7</ion-label>
+        <ion-input type="text" name="nomeComando7" [(ngModel)]="this.sistemaDaModificare.nomeComando7"
+                   placeholder="Inserire nome comando"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label>Testo N.7</ion-label>
+        <ion-input type="text" name="testoComando7" [(ngModel)]="this.sistemaDaModificare.testoComando7"
+                   placeholder="Inserire testo comando"></ion-input>
+      </ion-item>
+      <ion-item class="inizio-comando">
+        Comando N.8
+      </ion-item>
+      <ion-item class="elemento-sistema">
+        <ion-label >Nome N.8</ion-label>
+        <ion-input type="text" name="nomeComando8" [(ngModel)]="this.sistemaDaModificare.nomeComando8"
+                   placeholder="Inserire nome comando"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label>Testo N.8</ion-label>
+        <ion-input type="text" name="testoComando8" [(ngModel)]="this.sistemaDaModificare.testoComando8"
+                   placeholder="Inserire testo comando"></ion-input>
+      </ion-item>
+      <ion-item class="inizio-comando">
+        Comando N.9
+      </ion-item>
+      <ion-item class="elemento-sistema">
+        <ion-label>Nome N.9</ion-label>
+        <ion-input type="text" name="nomeComando9" [(ngModel)]="this.sistemaDaModificare.nomeComando9"
+                   placeholder="Inserire nome comando"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label>Testo N.9</ion-label>
+        <ion-input type="text" name="testoComando9" [(ngModel)]="this.sistemaDaModificare.testoComando9"
+                   placeholder="Inserire testo comando"></ion-input>
+      </ion-item>
+      <ion-item class="inizio-comando">
+        Comando N.10
+      </ion-item>
+      <ion-item class="elemento-sistema">
+        <ion-label>Nome N.10</ion-label>
+        <ion-input type="text" name="nomeComando10" [(ngModel)]="this.sistemaDaModificare.nomeComando10"
+                   placeholder="Inserire nome comando"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label>Testo N.10</ion-label>
+        <ion-input type="text" name="testoComando10" [(ngModel)]="this.sistemaDaModificare.testoComando10"
+                   placeholder="Inserire testo comando"></ion-input>
+      </ion-item>
+      <button ion-button type="submit" block clear (click)="modifySystem()">
+        Modifica sistema
+      </button>
+      <button ion-button type="submit" block clear (click)="deleteSystem()">
+        Elimina sistema
+      </button>
+    </ion-list>
+  </form>
+</ion-content>
+
+
+

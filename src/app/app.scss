@@ -14,3 +14,105 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.lista-pag{
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.toolbar-background {
+  background-color: orange;
+}
+.scroll-content {
+  background: url('../assets/sfondo/sfondoKros.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.list-md .item-block .item-inner {
+  border-bottom: 1px solid black;
+}
+
+.item-md {
+  background-color: #ffc400;
+}
+
+.button-md{
+  background-color: orange;
+  color: black;
+}
+
+.checkbox-md .checkbox-checked {
+  border-color: black;
+  background-color: orange;
+}
+
+.item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+  border-bottom-color: rgb(0, 0, 0);
+  box-shadow: rgb(0, 0, 0) 0px -1px 0px 0px inset;
+  -webkit-tap-highlight-color: black;
+
+}
+.item.active, .item.activated, .item-complex.active .item-content, .item-complex.activated .item-content {
+  border-color: #ccc;
+  background-color: #D9D9D9;
+}
+.item-input .label-md, .item-select .label-md, .item-datetime .label-md{
+color: black !important;
+}
+
+.item-ios {
+  background-color: #ffc400;
+}
+
+.button-ios{
+  background-color: orange;
+  color: black;
+}
+
+.list-ios .item-block .item-inner {
+  border-bottom: 1px solid black !important;
+}
+
+item-ios[detail-none] .item-inner,
+button.item-ios:not([detail-none]) .item-inner,
+a.item-ios:not([detail-none]) .item-inner {
+
+  background-image: none !important;
+
+}
+
+
+//.button-clear-md {
+//  color: #222222;
+//}
+//.button-md .buttom-inner {
+//  background-color: darkorange !important;
+//  color: #222222 !important;
+//}
+//
+////.button-ios{
+////  background-color: darkorange;
+////  color: black;
+////}
+//
+//.input-cover{
+//  color: #000;
+//}
+//.item-input .label-md, .item-select .label-md, .item-datetime .label-md{
+//  color: black;
+//}
+//.item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner{
+//  borderb-bottom-color:black ;
+//}
+//
+//.checkbox-md .checkbox-checked {
+//  border-color: black;
+//  background-color: darkorange;
+//}
+//input::-webkit-input-placeholder {
+//  color: black;
+//}
+//text-input-md-highlight-color{
+//  color: black;
+//}
+

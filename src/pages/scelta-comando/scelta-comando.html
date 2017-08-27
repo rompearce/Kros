@@ -1,0 +1,20 @@
+<!--
+  Generated template for the SceltaComandoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Scelta Comando</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="sfondo-scelta" >
+  <ion-list  inset>
+    <button ion-item class="tasto-comando" *ngFor="let comando of listaNomeComandi" (click)="sendSms(comando)">{{comando}}</button>
+  </ion-list>
+</ion-content>

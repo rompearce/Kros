@@ -1,17 +1,37 @@
 <ion-header>
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
-</ion-content>
+
+<ion-content class="sfondo-home" >
+  <ion-row class="logo-row">
+    <ion-col >
+      <img src="assets/icon/logoKros.PNG" >
+    </ion-col>
+  </ion-row>
+    <ion-list inset>
+      <button ion-item class="bottone-sistema" *ngFor="let sistemi of listaSistemiNomi" (click)="goToComand(sistemi)">{{sistemi}}</button>
+    </ion-list>
+    </ion-content>
+    <!--<ion-list>-->
+      <!--<ion-item *ngFor="let sistemi of listaSistemiNomi">-->
+        <!--<button ion-button (click)="goToComand(sistemi)">{{sistemi}}</button>-->
+      <!--</ion-item>-->
+    <!--</ion-list>-->
+  <!--</ion-content>-->
+  <!--<button ion-button class="" block clear (click)="sendToAddSystem()">-->
+    <!--Aggiungi sistema-->
+  <!--</button>-->
+<!--</ion-content>-->
+
+<!--<input id="numberTxt" placeholder="Enter mobile number" value="" type="tel"/>-->
+<!--<textarea id="messageTxt" placeholder="Enter message"></textarea>-->
+<!--<input type="button" onclick="sendSms()" value="Send SMS"/>-->
+<!--<button ion-button class="" block clear (click)="sendSms()">-->
+<!--Invia.-->
+<!--</button>-->
