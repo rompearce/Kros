@@ -8,56 +8,57 @@
 </ion-header>
 
 
-
 <ion-content class="sfondo-impostazioni" padding>
   <ion-list inset>
     <ion-item>
-      <ion-label >Impostare Pin di sicurezza</ion-label>
-      <ion-checkbox  item-right name="flag" value="true" [(ngModel)]="flag"></ion-checkbox>
+      <ion-label>Impostare Pin di sicurezza</ion-label>
+      <ion-checkbox item-right name="flag" value="true" [(ngModel)]="flag"></ion-checkbox>
     </ion-item>
     <ion-item *ngIf="flag">
       <!--<ion-label floating color="primary">Inserire pin in cifre</ion-label>-->
-      <ion-label >Inserire pin in cifre</ion-label>
+      <ion-label>Inserire pin in cifre</ion-label>
       <ion-input type="password" name="password" [(ngModel)]="this.pin" clearInput></ion-input>
     </ion-item>
     <!--<ion-item *ngIf="flag">-->
-      <!--<button ion-button class="" (click)="registraPin()">Salva pin.</button>-->
+    <!--<button ion-button class="" (click)="registraPin()">Salva pin.</button>-->
     <!--</ion-item>-->
     <!--<ion-item *ngIf="flag">-->
-      <!--<button ion-button class="" (click)="eliminaPin()">Elimina pin.</button>-->
+    <!--<button ion-button class="" (click)="eliminaPin()">Elimina pin.</button>-->
     <!--</ion-item>-->
     <ion-row *ngIf="flag">
       <ion-item>
-      <!--<ion-col col-6>-->
-        <button ion-button item-left  class="my-width" small (click)="registraPin()">
+        <!--<ion-col col-6>-->
+        <button ion-button item-left class="my-width" small (click)="registraPin()">
           <b>Salva pin</b>
         </button>
 
-      <!--</ion-col>-->
-      <!--<ion-col col-6>-->
+        <!--</ion-col>-->
+        <!--<ion-col col-6>-->
 
         <button ion-button item-right class="my-width" small (click)="eliminaPin()" style="float: left;">
           <b>Elimina pin</b>
         </button>
-        </ion-item>
+      </ion-item>
       <!--</ion-col>-->
     </ion-row>
   </ion-list>
   <ion-list inset>
-    <button ion-item class="bottone-sistema-modifica" *ngFor="let sistemi of listaSistemiNomiModifica" (click)="goToModifySystem(sistemi)">{{sistemi}}</button>
+    <button ion-item class="bottone-sistema-modifica" *ngFor="let sistemi of listaSistemiNomiModifica"
+            (click)="goToModifySystem(sistemi)">{{sistemi}}
+    </button>
   </ion-list>
   <div class="bottoni">
-<ion-item class="bottone-aggiungi" >
-    <button ion-button block clear (click)="sendToAddSystem()">
-      Aggiungi sistema
-    </button>
-  </ion-item>
-  <ion-item class="bottone-ripristina" >
-    <p>     Ripristina le configurazioni iniziali</p>
-    <button ion-button block clear (click)="restart()">
-      Ripristina app
-    </button>
-  </ion-item>
+    <ion-item class="bottone-aggiungi">
+      <button ion-button block clear (click)="sendToAddSystem()">
+        Aggiungi sistema
+      </button>
+    </ion-item>
+    <ion-item class="bottone-ripristina">
+      <p> Ripristina le configurazioni iniziali</p>
+      <button ion-button block clear (click)="restart()">
+        Ripristina app
+      </button>
+    </ion-item>
   </div>
 </ion-content>
 <!--<ion-content>-->

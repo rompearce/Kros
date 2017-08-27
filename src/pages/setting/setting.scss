@@ -1,54 +1,55 @@
 page-contact {
-  .my-width{
-    width:100px;
+  .my-width {
+    width: 100px;
   }
   input::-webkit-input-placeholder {
     color: black;
   }
-  text-input-md-highlight-color{
+  text-input-md-highlight-color {
     color: black;
   }
-.bottoni{
-  .bottone-aggiungi{
-    width: 298px !important;
-    padding-left: 16px !important;
-    margin-left: 15px !important;
-    margin-bottom: 10px !important;
-    //border-bottom: 1px solid black !important;
-    //margin-left: 15px !important;
-    //margin-right: 0px !important;
-    //padding-right: 10px !important;
-    //border-right-width: 10px !important;
-    //padding-left: 25px !important;
-    //height: 60px !important;
-    //width: 328px  !important;
-    //margin-bottom: 15px !important;
+  .bottoni {
+
+    .bottone-aggiungi {
+      width: 90% !important;
+      margin-left: 5% !important;
+      padding-left: 16px !important;
+      margin-bottom: 10px !important;
+      //border-bottom: 1px solid black !important;
+      //margin-left: 15px !important;
+      //margin-right: 0px !important;
+      //padding-right: 10px !important;
+      //border-right-width: 10px !important;
+      //padding-left: 25px !important;
+      //height: 60px !important;
+      //width: 328px  !important;
+      //margin-bottom: 15px !important;
+    }
+
+    .bottone-ripristina {
+      width: 90% !important;
+      margin-left: 5% !important;
+      padding-left: 16px !important;
+      margin-bottom: 10px !important;
+      //margin-left: 15px !important;
+      //margin-right: 0px !important;
+      //padding-right: 10px !important;
+      //border-right-width: 10px !important;
+      //padding-left: 23px !important;
+      //height: 60px !important;
+      //width: 329px !important;
+      //margin-bottom: 5px !important;
+      //border-bottom: 1px solid black !important;
+    }
+
+    .item-md.item-block .item-inner {
+      padding-right: 8px;
+      border-bottom: none;
+    }
   }
 
-  .bottone-ripristina{
-    width: 298px !important;
-    padding-left: 16px !important;
-    margin-left: 15px !important;
-    margin-bottom: 10px !important;
-    //margin-left: 15px !important;
-    //margin-right: 0px !important;
-    //padding-right: 10px !important;
-    //border-right-width: 10px !important;
-    //padding-left: 23px !important;
-    //height: 60px !important;
-    //width: 329px !important;
-    //margin-bottom: 5px !important;
-    //border-bottom: 1px solid black !important;
+  .bottone-sistema-modifica {
+    padding-right: 16px;
   }
-
-  .item-md.item-block .item-inner {
-    padding-right: 8px;
-    border-bottom: none;
-  }
-}
-
-.bottone-sistema-modifica{
-  padding-right: 16px;
-}
 
 }

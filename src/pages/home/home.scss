@@ -1,6 +1,6 @@
 page-home {
 
-  .bottone-sistema{
+  .bottone-sistema {
     padding-right: 16px;
   }
 
@@ -8,19 +8,18 @@ page-home {
     background-color: orange;
   }
 
-  .logo-row{
-    width: 339px;
-    padding-left: 10px;
-  //  padding-left: 109px;
-  //  padding-right: 125px;
-  //  padding-top: 10px;
-  //  height: 112px;
-  //  width: 388px;
+  .logo-row {
+    width: 100%;
+    //  padding-left: 109px;
+    //  padding-right: 125px;
+    //  padding-top: 10px;
+    //  height: 112px;
+    //  width: 388px;
 
-  .col {
-    border-top-width: 5px;
-    margin-top: 15px;
-  }
+    .col {
+      border-top-width: 5px;
+      margin-top: 15px;
+    }
   }
 
 }
