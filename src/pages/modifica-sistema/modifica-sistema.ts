@@ -24,7 +24,7 @@ export class ModificaSistemaPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.nomeSistemaModifica = this.navParams.get("sistema");
     console.log("Costruttore Modifica " + this.nomeSistemaModifica)
-    this.listaSistemiModificaSistema = JSON.parse(localStorage.getItem("todos"))
+    this.listaSistemiModificaSistema = JSON.parse(localStorage.getItem("sistemi"))
     for (let i in this.listaSistemiModificaSistema) {
       console.log(i);
       if (this.listaSistemiModificaSistema[i].nome === this.nomeSistemaModifica) {
@@ -46,7 +46,7 @@ export class ModificaSistemaPage {
       console.log(i);
       if (this.listaSistemiModificaSistema[i].nome === this.sistemaDaModificare.nome) {
         this.listaSistemiModificaSistema[i] = this.sistemaDaModificare;
-        localStorage.setItem('todos', JSON.stringify(this.listaSistemiModificaSistema));
+        localStorage.setItem('sistemi', JSON.stringify(this.listaSistemiModificaSistema));
         this.navCtrl.setRoot(HomePage);
       }
     }
@@ -81,7 +81,7 @@ export class ModificaSistemaPage {
       console.log(i);
       if (this.listaSistemiModificaSistema[i].nome === this.sistemaDaModificare.nome) {
         this.listaSistemiModificaSistema[i] = this.sistemaDaModificare;
-        localStorage.setItem('todos', JSON.stringify(this.listaSistemiModificaSistema));
+        localStorage.setItem('sistemi', JSON.stringify(this.listaSistemiModificaSistema));
         this.navCtrl.setRoot(HomePage);
       }
     }

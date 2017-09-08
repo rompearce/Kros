@@ -15,31 +15,18 @@
       <ion-checkbox item-right name="flag" value="true" [(ngModel)]="flag"></ion-checkbox>
     </ion-item>
     <ion-item *ngIf="flag">
-      <!--<ion-label floating color="primary">Inserire pin in cifre</ion-label>-->
       <ion-label>Inserire pin in cifre</ion-label>
-      <ion-input type="password" name="password" [(ngModel)]="this.pin" clearInput></ion-input>
+      <ion-input type="number" name="password" [(ngModel)]="this.pin" clearInput></ion-input>
     </ion-item>
-    <!--<ion-item *ngIf="flag">-->
-    <!--<button ion-button class="" (click)="registraPin()">Salva pin.</button>-->
-    <!--</ion-item>-->
-    <!--<ion-item *ngIf="flag">-->
-    <!--<button ion-button class="" (click)="eliminaPin()">Elimina pin.</button>-->
-    <!--</ion-item>-->
     <ion-row *ngIf="flag">
       <ion-item>
-        <!--<ion-col col-6>-->
         <button ion-button item-left class="my-width" small (click)="registraPin()">
           <b>Salva pin</b>
         </button>
-
-        <!--</ion-col>-->
-        <!--<ion-col col-6>-->
-
         <button ion-button item-right class="my-width" small (click)="eliminaPin()" style="float: left;">
           <b>Elimina pin</b>
         </button>
       </ion-item>
-      <!--</ion-col>-->
     </ion-row>
   </ion-list>
   <ion-list inset>
@@ -61,13 +48,7 @@
     </ion-item>
   </div>
 </ion-content>
-<!--<ion-content>-->
-<!--<ion-list>-->
-<!--<button ion-item *ngFor="let a of listComandi">-->
-<!--{{ a }}-->
-<!--</button>-->
-<!--</ion-list>-->
-<!--</ion-content>-->
+
 
 
 

@@ -27,7 +27,7 @@ export class SceltaComandoPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, private sms: SMS, private alertCtrl: AlertController, private actionSheetCtrl: ActionSheetController) {
     this.nomeSistema = this.navParams.get("sistema");
     console.log("passaggio del parametro in scelta comando" + this.nomeSistema);
-    this.listaSistemiSceltaComando = JSON.parse(localStorage.getItem("todos"))
+    this.listaSistemiSceltaComando = JSON.parse(localStorage.getItem("sistemi"))
     for (let i in this.listaSistemiSceltaComando) {
       console.log(i);
       if (this.listaSistemiSceltaComando[i].nome === this.nomeSistema) {

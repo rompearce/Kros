@@ -23,7 +23,7 @@ export class SettingPage {
 
   constructor(public navCtrl: NavController, private actionSheetCtrl: ActionSheetController, private alertCtrl: AlertController) {
 
-    this.listaSistemiSettings = JSON.parse(localStorage.getItem("todos"));
+    this.listaSistemiSettings = JSON.parse(localStorage.getItem("sistemi"));
 
     for (let i in this.listaSistemiSettings) {
       if (!isNullOrUndefined(this.listaSistemiSettings[i].nome)) {

@@ -5,7 +5,6 @@ export  class System{
 
   numeroGSM:string  ;
 
-  // listaComandi:Array<System>;
 
   nomeComando1:string;
   testoComando1:string;

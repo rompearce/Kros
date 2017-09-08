@@ -22,7 +22,7 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, private pinDialog: PinDialog, private alertCtrl: AlertController, public navParams: NavParams) {
 
-    this.listaSistemiHome = JSON.parse(localStorage.getItem("todos"));
+    this.listaSistemiHome = JSON.parse(localStorage.getItem("sistemi"));
     for (let i in this.listaSistemiHome) {
       if (!isNullOrUndefined(this.listaSistemiHome[i].nome)) {
         let nomeSistema = this.listaSistemiHome[i].nome;

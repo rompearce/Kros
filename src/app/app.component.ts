@@ -23,7 +23,7 @@ export class MyApp {
 
   constructor(public platform: Platform, public statusBar: StatusBar,public splashScreen: SplashScreen) {
     this.initializeApp();
-    this.listaSistemiHome = JSON.parse(localStorage.getItem("todos"));
+    this.listaSistemiHome = JSON.parse(localStorage.getItem("sistemi"));
     if (this.listaSistemiHome === null) {
       console.log("Stai nell if del costruttore");
 
@@ -32,7 +32,7 @@ export class MyApp {
       this.sistemaSherpa.testoComando1 = "TOTALE";
       this.sistemaSherpa.nomeComando2 = "Accensione Parz1";
       this.sistemaSherpa.testoComando2 = "PARZ1";
-      this.sistemaSherpa.nomeComando3 = "Accensione Parz1";
+      this.sistemaSherpa.nomeComando3 = "Accensione Parz2";
       this.sistemaSherpa.testoComando3 = "PARZ2";
       this.sistemaSherpa.nomeComando4 = "Spento";
       this.sistemaSherpa.testoComando4 = "SPENTO";
@@ -45,26 +45,26 @@ export class MyApp {
 
       this.sistemaSuperquad.nome = "SUPERQUAD 400 GSM";
       this.sistemaSuperquad.nomeComando1 = "Stato Impianto";
-      this.sistemaSuperquad.testoComando1 = "STA IMP ON OFF";
+      this.sistemaSuperquad.testoComando1 = "1234 STA IMP ON OFF";
       this.sistemaSuperquad.nomeComando2 = "Esistenza in vita";
-      this.sistemaSuperquad.testoComando2 = "STA";
+      this.sistemaSuperquad.testoComando2 = "1234 STA";
       this.sistemaSuperquad.nomeComando3 = "Accensione Uscita 1";
-      this.sistemaSuperquad.testoComando3 = "OUT 1 ON";
+      this.sistemaSuperquad.testoComando3 = "1234 OUT 1 ON";
       this.sistemaSuperquad.nomeComando4 = "Spegni Uscita 1";
-      this.sistemaSuperquad.testoComando4 = "OUT 1 OFF";
+      this.sistemaSuperquad.testoComando4 = "1234 OUT 1 OFF";
       this.sistemaSuperquad.nomeComando5 = "Accensione Uscita 2";
-      this.sistemaSuperquad.testoComando5 = "OUT 2 ON";
+      this.sistemaSuperquad.testoComando5 = "1234 OUT 2 ON";
       this.sistemaSuperquad.nomeComando6 = "Spegni Uscita 2";
-      this.sistemaSuperquad.testoComando6 = "OUT 2 OFF";
+      this.sistemaSuperquad.testoComando6 = "1234 OUT 2 OFF";
       this.sistemaSuperquad.nomeComando7 = "Memoria Eventi";
-      this.sistemaSuperquad.testoComando7 = "MEM";
+      this.sistemaSuperquad.testoComando7 = "1234 MEM";
       this.sistemaSuperquad.nomeComando8 = "Credito Residuo";
-      this.sistemaSuperquad.testoComando8 = "CRE";
+      this.sistemaSuperquad.testoComando8 = "1234 CRE";
 
       let listaSistemiProva: any = [];
       listaSistemiProva.push(this.sistemaSherpa);
       listaSistemiProva.push(this.sistemaSuperquad);
-      localStorage.setItem('todos', JSON.stringify(listaSistemiProva));
+      localStorage.setItem('sistemi', JSON.stringify(listaSistemiProva));
     } else {
       console.log("Stai nell else del costruttore");
     }

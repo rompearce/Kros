@@ -23,7 +23,7 @@ export class AggiungiPage {
   listaSistemi = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, platform: Platform) {
-    this.listaSistemi = JSON.parse(localStorage.getItem('todos'));
+    this.listaSistemi = JSON.parse(localStorage.getItem('sistemi'));
   }
 
   ionViewDidLoad() {
@@ -31,9 +31,9 @@ export class AggiungiPage {
   }
 
   saveSystem() {
-    this.listaSistemi = JSON.parse(localStorage.getItem('todos'));
+    this.listaSistemi = JSON.parse(localStorage.getItem('sistemi'));
     this.listaSistemi.push(this.sistemaDaInserire);
-    localStorage.setItem('todos', JSON.stringify(this.listaSistemi));
+    localStorage.setItem('sistemi', JSON.stringify(this.listaSistemi));
     this.navCtrl.setRoot(HomePage);
   }
 
