@@ -38,14 +38,26 @@ export class SettingPage {
 
   registraPin() {
     console.log("Pin inserito " + this.pin);
-    localStorage.setItem("pin", this.pin);
-    let confirm = this.alertCtrl.create({
-      title: 'Salvataggio Pin',
-      subTitle: 'Pin salvato correttamente',
-      buttons: ['OK']
-    });
-    confirm.present();
+    if (!isNullOrUndefined(this.pin)) {
+      localStorage.setItem("pin", this.pin);
+      let confirm = this.alertCtrl.create({
+        title: 'Salvataggio Pin',
+        subTitle: 'Pin salvato correttamente',
+        buttons: ['OK']
+      });
+      confirm.present();
+    }
+
+    else {
+      let confirm = this.alertCtrl.create({
+        title: 'Salvataggio Pin',
+        subTitle: 'Pin non valido , reinserire pin',
+        buttons: ['OK']
+      });
+      confirm.present();
+    }
   }
+
 
   eliminaPin() {
     let actionSheet = this.actionSheetCtrl.create({
@@ -55,8 +67,6 @@ export class SettingPage {
           text: 'Elimina',
           icon: 'remove-circle',
           handler: () => {
-            // this.logout();
-            // console.log('Logout clicked');
             localStorage.removeItem("pin");
             let confirm = this.alertCtrl.create({
               title: 'Eliminazione Pin',
@@ -106,8 +116,6 @@ export class SettingPage {
           text: 'Ripristina',
           icon: 'refresh',
           handler: () => {
-            // this.logout();
-            // console.log('Logout clicked');
             localStorage.clear();
             let confirm = this.alertCtrl.create({
               title: 'Rispristino App',
