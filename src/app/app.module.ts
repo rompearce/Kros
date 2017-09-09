@@ -4,7 +4,6 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { SettingPage } from '../pages/setting/setting';
 import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {SMS} from "@ionic-native/sms";
@@ -20,7 +19,6 @@ import {ContattiPage} from "../pages/contatti/contatti";
     MyApp,
     SettingPage,
     HomePage,
-    TabsPage,
     AggiungiPage,
     SceltaComandoPage,
     ModificaSistemaPage,
@@ -36,7 +34,6 @@ import {ContattiPage} from "../pages/contatti/contatti";
     MyApp,
     SettingPage,
     HomePage,
-    TabsPage,
     AggiungiPage,
     SceltaComandoPage,
     ModificaSistemaPage,
